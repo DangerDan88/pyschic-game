@@ -25,16 +25,18 @@ document.onkeyup = function(event) {
 
     if(userGuess === computerGuess[0] && guessesLeft > 0) {
         wins++;
-        guessesLeft = 9;
+        computerGuess = [];
         var compGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
   computerGuess.push(compGuess) 
-  console.log(computerGuess[0]);
+  console.log(computerGuess,lettersGuessed,compGuess);
+  guessesLeft = 9;
       alert("You win");
 
 
     }
     else if(userGuess !== computerGuess[0] && guessesLeft > 0) {
         guessesLeft = guessesLeft-1;
+        var compGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 
     }
