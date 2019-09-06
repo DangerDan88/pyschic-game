@@ -1,7 +1,23 @@
 body {
     background-image: url(assests/images/Delicate_arch_sunset.jpg);
+    
 }
 
 img {
     height: 100%; width: 100%;
+}
+
+p {
+    color: firebrick;
+    text-align: center;
+   
+}
+
+h1 {
+    text-align: center;
+    color: salmon;
+}
+
+.container {
+    border: solid 6px black;
 }

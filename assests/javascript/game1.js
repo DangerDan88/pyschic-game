@@ -29,6 +29,7 @@ document.onkeyup = function(event) {
         var compGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
   computerGuess.push(compGuess) 
   console.log(computerGuess[0]);
+      alert("You win");
 
 
     }
@@ -46,7 +47,7 @@ document.onkeyup = function(event) {
         var compGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
   computerGuess.push(compGuess) 
   console.log(computerGuess[0]);
-
+      alert("You lose try again");
 
     }
     var html = "<p>Guess what letter I'm thinking of!</p>" +
